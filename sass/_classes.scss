@@ -1,0 +1,17 @@
+@import "../sass/fonts";
+
+@mixin d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin f-family{
+    font-family: 'rokkitt';
+    font-size: 20px;
+    font-weight: 500;
+}
+@mixin f-family1{
+    font-family: 'staat';
+    font-size: 28px;
+    font-weight: 500;
+}

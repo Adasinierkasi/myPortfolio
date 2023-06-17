@@ -1,0 +1,129 @@
+@import "../sass/global";
+@import "../sass/fonts";
+@import "../sass/classes";
+@import "../sass/color";
+@import "../sass/responsive";
+
+
+.header{
+    background: $dark;
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+   .container{
+    @include d-flex;
+     .header-logo{
+        border: 1px solid $li;
+        padding: 5px 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px $li;
+        @include f-family1;
+        a{
+            color: $li;
+        }
+     }
+     nav{
+        ul{
+            @include d-flex;
+            gap: 50px;
+            li{
+                a{
+                    color: $li;
+                    @include f-family;
+                    border: 2px solid $dark;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    transition: all 0.5s ease;
+                    border-top: none;
+                }
+                a:hover{
+                    border: 2px solid $li;
+                    border-top: none;
+                }
+            }
+        }
+     }
+     .header-btn{
+        button{
+            padding: 10px 15px;
+            color: $dark;
+            background: $li;
+            @include f-family;
+            border: 2px dotted $li;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+        button:hover{
+            border: 2px dotted $dark;
+            opacity: 0.95;
+        }
+     }
+     .header-burger{
+        display: none;
+     }
+   }
+   @include reponsive(921px){
+    .container{
+        .header-logo{
+            font-size: 25px;
+        }
+        nav{
+            ul{
+                gap: 40px;
+                li{
+                    a{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .header-btn{
+            button{
+                padding: 8px 13px;
+                font-size: 18px;
+            }
+        }
+    }
+   }
+   @include reponsive_planshet{
+    .container{
+        padding: 0 20px;
+        .header-logo{
+            font-size: 21px;
+        }
+        nav{
+            ul{
+                gap: 25px;
+                li{
+                    a{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .header-btn{
+            button{
+                padding: 7px 10px;
+                font-size: 16px;
+            }
+        }
+    }
+   }
+   @include reponsive_mobile{
+    .container{
+        nav{
+            display: none;
+        }
+        .header-btn{
+            display: none;
+        }
+        .header-burger{
+            display: block;
+            font-size: 26px;
+        }
+    }
+   }
+}
+
+

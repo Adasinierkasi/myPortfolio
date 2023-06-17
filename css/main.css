@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 35px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-Black.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-Bold.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-ExtraLight.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-ExtraBold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-Medium.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-SemiBold.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "staat";
+  src: url(../fonts/Staatliches-Regular.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-Black.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-Bold.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-ExtraLight.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-ExtraBold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-Medium.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "rokkitt";
+  src: url(../fonts/Rokkitt-SemiBold.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "staat";
+  src: url(../fonts/Staatliches-Regular.ttf);
+  font-weight: 500;
+}
+.header {
+  background: #000;
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .header-logo {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #fff;
+  font-family: "staat";
+  font-size: 28px;
+  font-weight: 500;
+}
+.header .container .header-logo a {
+  color: #fff;
+}
+.header .container nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.header .container nav ul li a {
+  color: #fff;
+  font-family: "rokkitt";
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid #000;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  border-top: none;
+}
+.header .container nav ul li a:hover {
+  border: 2px solid #fff;
+  border-top: none;
+}
+.header .container .header-btn button {
+  padding: 10px 15px;
+  color: #000;
+  background: #fff;
+  font-family: "rokkitt";
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px dotted #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.header .container .header-btn button:hover {
+  border: 2px dotted #000;
+  opacity: 0.95;
+}
+.header .container .header-burger {
+  display: none;
+}
+@media screen and (max-width: 921px) {
+  .header .container .header-logo {
+    font-size: 25px;
+  }
+  .header .container nav ul {
+    gap: 40px;
+  }
+  .header .container nav ul li a {
+    font-size: 18px;
+  }
+  .header .container .header-btn button {
+    padding: 8px 13px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header .container {
+    padding: 0 20px;
+  }
+  .header .container .header-logo {
+    font-size: 21px;
+  }
+  .header .container nav ul {
+    gap: 25px;
+  }
+  .header .container nav ul li a {
+    font-size: 16px;
+  }
+  .header .container .header-btn button {
+    padding: 7px 10px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .header .container nav {
+    display: none;
+  }
+  .header .container .header-btn {
+    display: none;
+  }
+  .header .container .header-burger {
+    display: block;
+    font-size: 26px;
+  }
+}/*# sourceMappingURL=main.css.map */

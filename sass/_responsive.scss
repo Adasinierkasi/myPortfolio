@@ -1,0 +1,15 @@
+@mixin reponsive($maxWidth){
+    @media screen and (max-width: $maxWidth){
+        @content;
+    }
+}
+@mixin reponsive_planshet(){
+    @media screen and (max-width: 900px){
+        @content;
+    }
+}
+@mixin reponsive_mobile(){
+    @media screen and (max-width: 580px){
+        @content;
+    }
+}
