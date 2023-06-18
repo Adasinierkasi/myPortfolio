@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Go'zal Mo'minova portfolio</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="./images/logo-2.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo-2.jpg" type="image/x-icon" />
     <!-- style -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!-- header start -->
     <header class="header">
-        <div class="container">
-            <div class="header-logo">
-                <a href="#">G.M.A</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                </ul>
-            </nav>
-            <div class="header-btn">
-                <button>Contact Me</button>
-            </div>
-            <div class="header-burger">
-                <i class="fa fa-bars" style="color: white;"></i>
-            </div>
+      <div class="container">
+        <div class="header-logo">
+          <a href="#">G.M.A</a>
         </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+        </nav>
+        <div class="header-btn">
+          <button>Contact Me</button>
+        </div>
+        <div class="header-burger" id="header-bars">
+          <i class="fa fa-bars" style="color: white" id="bars"></i>
+          <div class="header-bars-nav">
+            <ul>
+              <li><i class="fa-solid fa-xmark" id="close"></i></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#skills">Skills</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- header end -->
-</body>
+
+
+    <script src="./script/app.js"></script>
+  </body>
 </html>

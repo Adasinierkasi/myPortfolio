@@ -193,4 +193,36 @@ html {
     display: block;
     font-size: 26px;
   }
+  .header .container .header-burger .header-bars-nav {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    right: 0;
+    top: 0;
+    padding: 20px;
+    width: 60%;
+  }
+  .header .container .header-burger .header-bars-nav ul li:nth-child(1) {
+    position: absolute;
+    left: 93%;
+    top: 10%;
+    color: #fff;
+    font-size: 20px;
+  }
+  .header .container .header-burger .header-bars-nav ul li a {
+    font-family: "rokkitt";
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.7s ease;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border-left: 2px solid #000;
+  }
+  .header .container .header-burger .header-bars-nav ul li a:hover {
+    border-left: 2px solid #fff;
+    opacity: 0.8;
+  }
 }/*# sourceMappingURL=main.css.map */

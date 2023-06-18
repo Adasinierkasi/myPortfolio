@@ -121,6 +121,39 @@
         .header-burger{
             display: block;
             font-size: 26px;
+            .header-bars-nav{
+                display: none;
+                position: absolute;
+                background-color: #000000;
+                backdrop-filter: blur(10px);
+                right: 0;
+                top: 0;
+                padding: 20px;
+                width: 60%;
+                ul{
+                    li{
+                        &:nth-child(1){
+                            position: absolute;
+                            left: 93%;
+                            top: 10%;
+                            color: $li;
+                            font-size: 20px;
+                        }
+                        a{
+                            @include f-family;
+                            color: $li;
+                            transition: all 0.7s ease;
+                            margin-bottom: 30px;
+                            padding-left: 10px;
+                            border-left: 2px solid $dark;
+                        }
+                        a:hover{
+                            border-left: 2px solid $li;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
         }
     }
    }
